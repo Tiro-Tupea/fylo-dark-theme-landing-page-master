@@ -1,0 +1,369 @@
+@import '_variables.scss';
+
+
+
+
+/*-- GENERAL --*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 110%;
+    color: $White;
+    background-color: $DarkBlueTestimonials;
+    font-family: $Open;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+footer {
+    width: 100%;
+    height: 45vh;
+    padding: 5rem;
+    font-size: 12px;
+    background-color: $DarkBlueFooter;
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+        list-style: none;
+        margin: 1rem;
+    }
+}
+
+button {
+    color: $White;
+    width: 18vw;
+    height: 5vh;
+    border-style: none;
+    border-radius: 2rem;
+    background-color: $Blue;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $Cyan;
+    }
+}
+
+a {
+    color: $White;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+}
+
+/*-- CLASSES --*/
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-wrapper {
+    width: 110vw;
+    height: auto;
+    margin: 0 auto;
+    background-image: url('/assets/images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position-y: 45vh ;
+    background-position-x: -5rem ;
+    
+    @media only screen and (max-width: 600px) {
+        background-image: url('/assets/images/bg-curvy-mobile.svg');
+        background-size: 135vw;
+    }
+   
+}
+
+.bottom-wrapper {
+    background-color: $DarkBluemain;
+}
+
+/* Nav bar */
+
+.header-nav-bar {
+    
+    img {
+        width: 10vw;
+        height: auto;
+        margin: 3rem;
+
+    }
+    .nav-bar {
+        float: right;
+        position: relative;
+        bottom: 5rem;
+        right: 5rem;
+        li {
+            font-size: 12px;
+            list-style: none;
+            display: inline;
+            margin: 0 1rem;
+        }
+    }
+}
+
+/* main */
+
+.main {
+    
+    text-align: center;
+    margin-bottom: 5rem;
+    img {
+        width: 50vw;
+    }
+
+    h1{
+        margin: 0.5rem;
+        font-family: $Raileway;
+        font-size: 5vw;
+        
+    }
+
+    .text-content{
+        margin: 2rem;
+        width: 40vw;
+    }
+
+}
+
+/* Quality */
+
+.quality-desc {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 7rem;
+    grid-row-gap: 2rem;
+
+    
+    .desc {
+        width: 28vw;
+        height: 25vh;
+
+        h3 {
+            margin-top: 1rem;
+        }
+
+        p {
+            margin: 0.5rem;
+            font-size: 12px;
+        }
+        
+    }
+
+    .desc-3, .desc-2 {
+        position: relative;
+        bottom: 9px;
+    }
+
+}
+
+/* stay productiv */
+
+.productiv-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    h2 {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+    }
+
+    .img-productiv {
+        
+        margin: 3.5rem;
+        img {
+            width: 45vw;
+            height: auto;
+        }
+    }
+
+    .text-productiv {
+        width: 40vw;
+        text-align: left;
+        font-size: 2vw;
+
+    }
+
+    .productiv-link {
+        margin-top: 2rem;
+        
+
+        a{
+            color: $Cyan;
+            border-bottom: 1px solid $Cyan;
+            &:hover{
+                color: $White;
+                font-weight: 400;
+                text-decoration: none;
+                border-bottom: 1px solid $White;
+                cursor: pointer;
+
+            }
+        }
+        img {
+            position: relative;
+            top: 5px;
+            
+        }
+
+        
+    }
+}
+
+/* comment card */
+
+.comment-card {
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    gap: 2rem;
+    background-image: url(/assets/images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 0.5rem 1rem;
+
+    .card {
+    width: 32vh;
+    height: 20vh;
+    padding: 1.5rem;
+    font-size: 12px;
+    border-radius: 0.2rem;
+    background-color: $DarkBlueTestimonials;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+
+    }
+
+    img {
+        width: 3vh;
+        height: auto;
+        border-radius: 50%;
+        float: left;
+    }
+
+    .text-comment {
+        position: relative;
+        top: 0.5rem;
+    }
+
+    .user-info{
+       position: relative;
+       top: 2.5rem;
+    }
+
+}
+
+/* MAIL TO */
+
+.mail-to {
+    width: 70vw;
+    height: 30vh;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: $DarkBlueTestimonials;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    position: relative;
+    top: 5rem;
+
+    h1{
+        font-size: 6vw;
+        font-family: $Raileway;
+        margin: 1rem auto;
+    }
+
+    p {
+        margin-bottom: 3rem;
+    }
+    .forms{
+
+        input[type=text]{
+            width: 40vw;
+            height: 5vh;
+            text-align: center;
+            border-style: none;
+            border-radius: 2rem;
+            margin-right: 1rem;
+        }
+
+        .error-msg {
+            color: red;
+            font-size: 12px;
+            float: left;
+        }
+
+        #error-msg {
+            display: none;
+            
+        }
+    }
+
+}
+
+/* FOOTER */
+
+.img-footer {
+    width: 30vw;
+    .logo-fylo {
+        width: 8vw;
+        height: auto;
+        margin-bottom: 2rem;
+        position: relative;
+        right: 8rem;
+    }
+    .location-icon {
+        float: left;
+        margin: 1rem;
+        position: relative;
+        bottom: 1rem;
+    }
+    
+}
+
+.num-email {
+    width: 15vw;
+    position: relative;
+    top: 1.8rem;
+    a {
+        margin: 0.5rem auto;
+        img {
+            margin-right: 1rem;
+        }
+    }
+
+    a:first-child {
+        position: relative;
+        right: 0.5rem;
+    }
+}
+
+.about-us {
+    width: 10vw;
+    position: relative;
+    top: 4rem;
+}
+
+.contact-us {
+    width: 10vw;
+    position: relative;
+    top: 3rem;
+}
+

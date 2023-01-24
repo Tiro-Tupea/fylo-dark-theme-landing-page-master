@@ -1,0 +1,22 @@
+/*__Primary__*/
+
+$DarkBlueIntro        : hsl(217, 28%, 15%);
+$DarkBluemain         : hsl(218, 28%, 13%);
+$DarkBlueFooter       : hsl(216, 53%, 9%);
+$DarkBlueTestimonials : hsl(219, 30%, 18%);
+
+/*__Accent__*/
+
+$Cyan/*(inside call-to-action gradient)*/ : hsl(176, 68%, 64%);
+$Blue /*(inside call-to-action gradient)*/: hsl(198, 60%, 50%);
+$LightRed /*(error)*/                     : hsl(0, 100%, 63%);
+
+/*__Neutral__*/
+
+$White: hsl(0, 0%, 100%);
+
+
+/*__Font__*/
+
+$Raileway : 'Raleway', sans-serif;
+$Open     : 'Open Sans', sans-serif;
